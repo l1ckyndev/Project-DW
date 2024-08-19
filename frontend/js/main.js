@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.getElementById('logout').addEventListener('click', function() {
             sessionStorage.removeItem('user');
-            window.location.href = '../pages/login.html';
+            window.location.href = 'login.html';
         });
     }
 });

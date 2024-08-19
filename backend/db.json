@@ -1,17 +1,14 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "username": "admin",
-        "password": "admin123",
-        "lastLogin": "2024-08-19T12:00:00Z"
-      },
-      {
-        "id": 2,
-        "username": "user1",
-        "password": "user123",
-        "lastLogin": "2024-08-19T12:00:00Z"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123"
+    },
+    {
+      "id": "1e57",
+      "username": "luca",
+      "password": "luca"
+    }
+  ]
+}
