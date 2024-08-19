@@ -1,3 +1,4 @@
+
 .team-cards-container {
     width: 100%;
     display: flex;
@@ -87,3 +88,29 @@
     border-color: #bd2130;
 }
 
+.logo-img {
+    height: auto; /* Ajuste o tamanho conforme necessário */
+    width: 150px;
+    margin-right: 20px; /* Espaço entre a logo e o texto */
+}
+
+.navbar {
+    height: 90px; /* Ajuste a altura conforme necessário */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens no header */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente a logo e o texto */
+}
+
+.navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-toggler {
+    margin-top: 0;
+    margin-bottom: 0;
+}
