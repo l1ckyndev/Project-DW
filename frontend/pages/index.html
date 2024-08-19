@@ -17,34 +17,7 @@
             </div>
         </div>
     </div>
-    <script>
-        // Função para carregar o conteúdo do cabeçalho
-        function loadHeader() {
-            fetch('/frontend/components/header.html')
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById('header').innerHTML = html;
-                    updateHeader();
-                })
-                .catch(error => console.error('Error loading header:', error));
-        }
-
-        // Função para atualizar o cabeçalho com informações do usuário
-        function updateHeader() {
-            const user = JSON.parse(sessionStorage.getItem('user'));
-            if (user) {
-                document.getElementById('userGreeting').textContent = `Bem-vindo, ${user.username}`;
-                document.getElementById('logout').addEventListener('click', function() {
-                    sessionStorage.removeItem('user');
-                    window.location.href = '/frontend/pages/login.html';
-                });
-            } else {
-                window.location.href = '/frontend/pages/login.html';
-            }
-        }
-
-        // Carregar o cabeçalho quando a página for carregada
-        document.addEventListener('DOMContentLoaded', loadHeader);
-    </script>
+    <div id="footer"></div>
+    <script src="../js/loadComponents.js"></script>
 </body>
 </html>
