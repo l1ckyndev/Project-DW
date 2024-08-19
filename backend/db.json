@@ -10,5 +10,15 @@
       "username": "luca",
       "password": "luca"
     }
-  ]
+  ],
+    "traceroute": [
+        {
+            "target": "8.8.8.8",
+            "result": [
+                "1 192.168.1.1",
+                "2 10.0.0.1",
+                "3 8.8.8.8"
+            ]
+        }
+    ]
 }
