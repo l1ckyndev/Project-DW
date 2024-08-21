@@ -35,8 +35,8 @@ function registerUser(username, password) {
         return response.json();
     })
     .then(data => {
-        console.log('User registered successfully:', data);
-        window.location.href = 'login.html';  // Ajuste o caminho conforme necessário
+        alert('User registered successfully:', data);
+        window.location.href = 'login.html';  
         alert('User registered successfully!');
     })
     .catch(error => {

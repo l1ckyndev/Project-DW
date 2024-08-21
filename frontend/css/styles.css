@@ -114,3 +114,115 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.banner {
+    background: url('../assets/banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.project-info {
+    padding: 4rem 2rem;
+}
+.team-member {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.team-member img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 8px;
+}
+.team-member h3 {
+    margin-top: 1rem;
+}
+
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.cont    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.register-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.traceroute-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Styles for the traceroute result table */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #fff;
+}
+
+/* Estilo do botão no header */
+.btn-hover {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-hover:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo para o Header Traceroute */
+.navbar-brand {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.navbar-brand:hover {
+    color: #7699c7;
+}
+
