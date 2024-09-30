@@ -83,11 +83,11 @@ Execute o Docker Compose para subir o ambiente de banco de dados:
 
     docker-compose up -d
     
-    Execute as migrações do banco de dados (se estiver utilizando Prisma):
+  Execute as migrações do banco de dados (se estiver utilizando Prisma):
     
     npx prisma migrate dev
     
-    Inicie o servidor:
+  Inicie o servidor:
     
     npm start
 
