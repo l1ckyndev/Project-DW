@@ -16,7 +16,7 @@ Este projeto é uma aplicação web que visa facilitar o uso dos comandos dig e 
 
 - *Resultados do Comando traceroute*:
   ![Logo](./frontend/assets/utils/traceroute.png)
-  
+
 
 ## Funcionalidades do Projeto
 
@@ -54,7 +54,10 @@ As dependências utilizadas neste projeto são:
 
     "pg": "^8.13.0",
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3caa5c0a66d331ebfbb87172d80f98ba12bb7e4d
 
 ## Instruções de Instalação
 
