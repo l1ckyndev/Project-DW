@@ -24,17 +24,29 @@ As dependências utilizadas neste projeto são:
 
 {
     "@prisma/client": "^5.20.0",
+
     "bcrypt": "^5.1.1",
+
     "bcryptjs": "^2.4.3",
+
     "body-parser": "^1.20.3",
+
     "cors": "^2.8.5",
+
     "dotenv": "^16.4.5",
+
     "express": "^4.21.0",
+
     "json-server": "^0.17.0",
+
     "jsonwebtoken": "^9.0.2",
+
     "mysql": "^2.18.1",
+
     "mysql2": "^3.11.3",
+
     "pg": "^8.13.0",
+
     "sequelize": "^6.37.3"
 }
 
@@ -80,5 +92,5 @@ npm start
 Em caso de dúvidas ou sugestões, entre em contato com:
 
 - Cássio Bastos: cassio.bastos@academico.ifpb.edu.br
-- Lucas Sousa: lucas.sousa.1@academico.ifpb.edu.br
-- Cândido Lucas: candido.lucas@academico.ifpb.edu.br
+- Lucas Gabriel: lucas.sousa.1@academico.ifpb.edu.br
+- Lucas Vinícius: candido.lucas@academico.ifpb.edu.br
