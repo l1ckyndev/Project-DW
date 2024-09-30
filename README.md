@@ -23,6 +23,7 @@ Este projeto é uma aplicação web que visa facilitar o uso dos comandos dig e 
 As dependências utilizadas neste projeto são:
 
 {
+
     "@prisma/client": "^5.20.0",
 
     "bcrypt": "^5.1.1",
