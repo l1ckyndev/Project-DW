@@ -9,11 +9,12 @@ generator client {
 }
 
 model User {
-  id    Int     @id @default(autoincrement())
-  username  String
-  email String  @unique
-  password String
-  posts Post[]
+  id        Int     @id @default(autoincrement())
+  username      String
+  email     String  @unique
+  password  String
+  posts     Post[]  // Referência ao modelo Post
+  historicos Historico[] // Nova referência ao modelo Historico
 }
 
 model Post {
@@ -22,4 +23,12 @@ model Post {
   content  String
   userId   Int
   user     User     @relation(fields: [userId], references: [id])
+}
+
+model Historico {
+  id         Int      @id @default(autoincrement())
+  userId     Int
+  traceroute String   // O resultado do traceroute
+  createdAt  DateTime @default(now()) // Data e hora da criação
+  user       User     @relation(fields: [userId], references: [id])
 }
