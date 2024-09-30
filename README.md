@@ -11,7 +11,8 @@ Este projeto é uma aplicação web que visa facilitar o uso dos comandos dig e 
 - *Resultados do Comando dig*: 
 
 - *Resultados do Comando traceroute*:
-  
+  ![Uploading image.png…]()
+
 
 ## Funcionalidades do Projeto
 
@@ -31,8 +32,6 @@ As dependências utilizadas neste projeto são:
 
     "bcrypt": "^5.1.1",
 
-    "bcryptjs": "^2.4.3",
-
     "body-parser": "^1.20.3",
 
     "cors": "^2.8.5",
@@ -50,9 +49,6 @@ As dependências utilizadas neste projeto são:
     "mysql2": "^3.11.3",
 
     "pg": "^8.13.0",
-
-    "sequelize": "^6.37.3"
-
 
 
 ## Instruções de Instalação
