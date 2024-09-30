@@ -15,9 +15,7 @@ Este projeto é uma aplicação web que visa facilitar o uso dos comandos dig e 
 
 
 - *Resultados do Comando traceroute*:
-  ![Logo](./frontend/assets/utils/traceroute.png)
-
-
+  ![Logo](./frontend/assets/utils/Traceroute.png)
 ## Funcionalidades do Projeto
 
 - Execução dos comandos dig e traceroute via interface gráfica.
