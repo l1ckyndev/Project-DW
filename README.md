@@ -66,18 +66,18 @@ As dependências utilizadas neste projeto são:
 
 Clone o repositório:
 
-git clone https://github.com/usuario/repositorio.git
+    git clone https://github.com/usuario/repositorio.git
 
 Instale as dependências:
 
-npm install
+    npm install
 
 Configure as variáveis de ambiente:
 
 - Crie um arquivo .env na raiz do projeto e adicione as seguintes variáveis:
 
-DATABASE_URL=mysql://user:password@localhost:3306/dbname
-JWT_SECRET=sua-chave-secreta
+      DATABASE_URL=mysql://user:password@localhost:3306/dbname
+      JWT_SECRET=sua-chave-secreta
 
 Execute o Docker Compose para subir o ambiente de banco de dados:
 
