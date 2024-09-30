@@ -6,9 +6,12 @@ Este projeto é uma aplicação web que visa facilitar o uso dos comandos dig e 
 
 ## Telas do Sistema
 
-- *Tela Inicial*: PRINT
-- *Resultados do Comando dig*: PRINT
-- *Resultados do Comando traceroute*: PRINT
+- *Tela Inicial*:
+  
+- *Resultados do Comando dig*: 
+
+- *Resultados do Comando traceroute*:
+  
 
 ## Funcionalidades do Projeto
 
@@ -22,7 +25,7 @@ Este projeto é uma aplicação web que visa facilitar o uso dos comandos dig e 
 
 As dependências utilizadas neste projeto são:
 
-{
+
 
     "@prisma/client": "^5.20.0",
 
@@ -49,7 +52,7 @@ As dependências utilizadas neste projeto são:
     "pg": "^8.13.0",
 
     "sequelize": "^6.37.3"
-}
+
 
 
 ## Instruções de Instalação
@@ -78,15 +81,15 @@ JWT_SECRET=sua-chave-secreta
 
 Execute o Docker Compose para subir o ambiente de banco de dados:
 
-docker-compose up -d
-
-Execute as migrações do banco de dados (se estiver utilizando Prisma):
-
-npx prisma migrate dev
-
-Inicie o servidor:
-
-npm start
+    docker-compose up -d
+    
+    Execute as migrações do banco de dados (se estiver utilizando Prisma):
+    
+    npx prisma migrate dev
+    
+    Inicie o servidor:
+    
+    npm start
 
 ## Informações de Contato
 
