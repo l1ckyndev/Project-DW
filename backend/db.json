@@ -1,36 +1,4 @@
 {
-  "users": [
-    {
-      "id": "1",
-      "username": "admin",
-      "password": "admin123"
-    },
-    {
-      "username": "lucas vinicius",
-      "password": "lucas",
-      "id": "1smRRxe"
-    },
-    {
-      "username": "Lucas",
-      "password": "lucas",
-      "id": "44oNuj8"
-    },
-    {
-      "username": "luca",
-      "password": "luca",
-      "id": "lNsSdcp"
-    },
-    {
-      "username": "vinicius",
-      "password": "vinicius",
-      "id": "YQUhzZ_"
-    },
-    {
-      "username": "cassio",
-      "password": "cassio",
-      "id": "jKcP94L"
-    }
-  ],
   "traceroute": [
     {
       "target": "8.8.8.8",
