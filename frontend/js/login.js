@@ -1,28 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
     if (loginForm) {
-        loginForm.addEventListener('submit', function(event) {
+        loginForm.addEventListener('submit', async function(event) {
             event.preventDefault();
-            const username = document.getElementById('username').value;
+            const email = document.getElementById('username').value;
             const password = document.getElementById('password').value;
-            authenticateUser(username, password);
+            const response = await loginUser(email, password);
+            console.log(response);
         });
     }
 });
 
-function authenticateUser(username, password) {
-    fetch('http://localhost:3000/users')
-        .then(response => response.json())
-        .then(users => {
-            const user = users.find(user => user.username === username && user.password === password);
-            if (user) {
-                sessionStorage.setItem('user', JSON.stringify(user));
-                window.location.href = 'index.html'; // Ajuste o caminho conforme necessário
-            } else {
-                alert('Invalid credentials.');
-            }
-        })
-        .catch(error => {
-            console.error('Error during authentication:', error);
-        });
+async function loginUser(email, password) {
+    const response = await fetch('http://localhost:3000/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+    });
+    const data = await response.json();
+
+    if (response.ok) {
+        sessionStorage.setItem('token', data.token);
+        sessionStorage.setItem('user', JSON.stringify({ username: data.username, lastLogin: new Date() })); // Armazenando o username
+        alert('Login bem-sucedido!');
+        window.location.href = 'index.html'; // Redireciona para a página index
+    } else {
+        alert(data.message || 'Erro ao fazer login.');
+    }
 }

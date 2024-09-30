@@ -1,46 +1,40 @@
+// frontend/js/signup.js
 document.addEventListener('DOMContentLoaded', function() {
     const registerForm = document.getElementById('registerForm');
     if (registerForm) {
-        registerForm.addEventListener('submit', function(event) {
+        registerForm.addEventListener('submit', async function(event) {
             event.preventDefault();
+
             const username = document.getElementById('registerUsername').value;
-            const password = document.getElementById('registerPassword').value;
+            const email = document.getElementById('registerEmail').value; // Campo de email
+            const password = document.getElementById('registerPassword').value;  
             const confirmPassword = document.getElementById('confirmPassword').value;
+
             if (password === confirmPassword) {
-                registerUser(username, password);
+                const response = await registerUser(username, email, password);
+                console.log(response);
             } else {
-                alert('Passwords do not match.');
+                alert('As senhas não coincidem.'); // Mensagem de erro se as senhas não coincidirem
             }
         });
     }
 });
 
-function registerUser(username, password) {
-    console.log('Registering user with username:', username);
-    fetch('http://localhost:3000/users', {
+async function registerUser(username, email, password) {
+    console.log('Tentando registrar usuário:', { username, email, password }); // Log dos dados enviados
+
+    const response = await fetch('http://localhost:3000/auth/register', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            username: username,
-            password: password
-        })
-    })
-    .then(response => {
-        console.log('Response status:', response.status);
-        if (!response.ok) {
-            throw new Error('Failed to register user');
-        }
-        return response.json();
-    })
-    .then(data => {
-        alert('User registered successfully:', data);
-        window.location.href = 'login.html';  
-        alert('User registered successfully!');
-    })
-    .catch(error => {
-        console.error('Error registering user:', error);
-        alert('Failed to register user. Please try again.');
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, email, password }) // Envia username, email e password
     });
+
+    const data = await response.json();
+    
+    if (response.ok) {
+        alert('Registro bem-sucedido! Por favor, faça login.'); // Mensagem de sucesso
+        window.location.href = 'login.html'; // Redireciona para a página de login
+    } else {
+        alert(data.message || 'Erro ao registrar.'); // Exibe a mensagem de erro
+    }
 }

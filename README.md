@@ -7,10 +7,15 @@ Este projeto é uma aplicação web que visa facilitar o uso dos comandos dig e 
 ## Telas do Sistema
 
 - *Tela Inicial*:
+  ![Logo](./frontend/assets/utils/Tela%20inicial.png)
+
   
 - *Resultados do Comando dig*: 
+  ![Logo](./frontend/assets/utils/dig.png)
+
 
 - *Resultados do Comando traceroute*:
+  ![Logo](./frontend/assets/utils/traceroute.png)
   
 
 ## Funcionalidades do Projeto
@@ -31,8 +36,6 @@ As dependências utilizadas neste projeto são:
 
     "bcrypt": "^5.1.1",
 
-    "bcryptjs": "^2.4.3",
-
     "body-parser": "^1.20.3",
 
     "cors": "^2.8.5",
@@ -51,8 +54,6 @@ As dependências utilizadas neste projeto são:
 
     "pg": "^8.13.0",
 
-    "sequelize": "^6.37.3"
-
 
 
 ## Instruções de Instalação
@@ -60,7 +61,7 @@ As dependências utilizadas neste projeto são:
 ### Pré-requisitos
 
 - Node.js instalado (v16+)
-- Banco de dados MySQL ou PostgreSQL
+- Banco de dados MySQL
 
 *Passo a passo*
 
@@ -74,7 +75,7 @@ Instale as dependências:
 
 Configure as variáveis de ambiente:
 
-- Crie um arquivo .env na raiz do projeto e adicione as seguintes variáveis:
+- modifique o arquivo .env.example para .env na raiz do projeto e adicione as seguintes variáveis:
 
       DATABASE_URL=mysql://user:password@localhost:3306/dbname
       JWT_SECRET=sua-chave-secreta
@@ -83,11 +84,11 @@ Execute o Docker Compose para subir o ambiente de banco de dados:
 
     docker-compose up -d
     
-  Execute as migrações do banco de dados (se estiver utilizando Prisma):
+Execute as migrações do banco de dados (se estiver utilizando Prisma):
     
     npx prisma migrate dev
     
-  Inicie o servidor:
+Inicie o servidor:
     
     npm start
 
